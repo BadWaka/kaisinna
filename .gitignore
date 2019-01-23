@@ -1,2 +1,4 @@
 node_modules/
 package-lock.json
+amd_modules/
+amd-lock.json

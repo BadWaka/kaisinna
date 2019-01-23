@@ -19,6 +19,11 @@
   "homepage": "https://github.com/BadWaka/kaisinna#readme",
   "dependencies": {
     "express": "^4.16.4",
-    "lottie-web": "^5.4.3"
+    "lottie-web": "^5.4.3",
+    "vue": "^2.5.22"
+  },
+  "devDependencies": {
+    "vueify": "^9.4.1",
+    "vue-loader": "^15.5.1"
   }
 }

@@ -1,13 +1,13 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const VueLoaderPlugin = require('vue-loader/lib/plugin');
-const CleanWebpackPlugin = require('clean-webpack-plugin');
+// const CleanWebpackPlugin = require('clean-webpack-plugin');
 const ManifestPlugin = require('webpack-manifest-plugin');
 
 module.exports = {
     entry: './src/main.js',
     output: {
-        path: path.resolve(__dirname, './static/dist'),
+        path: path.resolve(__dirname, './static'),
         filename: 'bundle.js'
     },
     module: {
@@ -43,10 +43,10 @@ module.exports = {
     },
     plugins: [
         new HtmlWebpackPlugin({
-            title: 'Output Management'
+            title: '网页',
+            template: 'src/index.html'
         }),
         new VueLoaderPlugin(),
-        new CleanWebpackPlugin(['dist']),
         new ManifestPlugin()
     ]
 };

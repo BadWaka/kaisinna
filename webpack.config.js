@@ -1,13 +1,13 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const VueLoaderPlugin = require('vue-loader/lib/plugin');
-// const CleanWebpackPlugin = require('clean-webpack-plugin');
+const CleanWebpackPlugin = require('clean-webpack-plugin');
 const ManifestPlugin = require('webpack-manifest-plugin');
 
 module.exports = {
     entry: './src/main.js',
     output: {
-        path: path.resolve(__dirname, './static'),
+        path: path.resolve(__dirname, './dist'),
         filename: 'bundle.js'
     },
     module: {
@@ -47,6 +47,7 @@ module.exports = {
             template: 'src/index.html'
         }),
         new VueLoaderPlugin(),
+        new CleanWebpackPlugin(['dist']),
         new ManifestPlugin()
     ]
 };

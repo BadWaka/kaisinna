@@ -1,5 +1,8 @@
 const path = require('path');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
 const VueLoaderPlugin = require('vue-loader/lib/plugin');
+const CleanWebpackPlugin = require('clean-webpack-plugin');
+const ManifestPlugin = require('webpack-manifest-plugin');
 
 module.exports = {
     entry: './src/main.js',
@@ -39,6 +42,11 @@ module.exports = {
         ]
     },
     plugins: [
-        new VueLoaderPlugin()
+        new HtmlWebpackPlugin({
+            title: 'Output Management'
+        }),
+        new VueLoaderPlugin(),
+        new CleanWebpackPlugin(['dist']),
+        new ManifestPlugin()
     ]
 };

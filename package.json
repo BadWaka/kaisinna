@@ -24,6 +24,7 @@
   },
   "devDependencies": {
     "css-loader": "^2.1.0",
+    "file-loader": "^3.0.1",
     "style-loader": "^0.23.1",
     "vue-loader": "^15.5.1",
     "vueify": "^9.4.1",

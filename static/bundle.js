@@ -396,7 +396,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var vue_
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = ({\n    mounted() {\n        window.onscroll = this.scrollMixinOnWindowScroll;\n    },\n    methods: {\n        scrollMixinOnWindowScroll() {\n            console.log('scrollMixinOnWindowScroll', document.body.scrollTop);\n        }\n    }\n});\n\n//# sourceURL=webpack:///./src/mixins/scrollMixin.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = ({\n    data() {\n        return {\n            scrollMixinLastScrollTop: -1\n        }\n    },\n    mounted() {\n        window.onscroll = this.scrollMixinOnWindowScroll;\n    },\n    methods: {\n        scrollMixinOnWindowScroll() {\n            console.log('scrollMixinOnWindowScroll', document.body.scrollTop);\n            if (this.scrollMixinLastScrollTop === -1) {\n                this.scrollMixinLastScrollTop = document.body.scrollTop;\n                return;\n            }\n            if (this.scrollMixinLastScrollTop < document.body.scrollTop) {\n                this.scrollMixinScrollDown();\n            }\n            else {\n                this.scrollMixinScrollUp();\n            }\n            this.scrollMixinLastScrollTop = document.body.scrollTop;\n        },\n        // 向上滑动\n        scrollMixinScrollUp() {\n            console.log('向上滑动');\n        },\n        // 向下滑动\n        scrollMixinScrollDown() {\n            console.log('向下滑动');\n        }\n    }\n});\n\n//# sourceURL=webpack:///./src/mixins/scrollMixin.js?");
 
 /***/ })
 

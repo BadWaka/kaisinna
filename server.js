@@ -1,8 +1,6 @@
 const express = require('express');
 const vueLoader = require('vue-loader');
 
-console.log('vueLoader', vueLoader);
-
 const app = express();
 
 // 设置静态文件

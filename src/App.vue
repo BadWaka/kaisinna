@@ -2,6 +2,10 @@
     <div>
         <k-header></k-header>
         <div
+            class="margin-header"
+        >
+        </div>
+        <div
             v-for="i in 100"
             :key="i"
         >
@@ -25,6 +29,8 @@ export default {
 </script>
 
 <style scoped>
-
+.margin-header {
+    margin-top: 72px;
+}
 </style>
 

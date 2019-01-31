@@ -5,10 +5,15 @@ const CleanWebpackPlugin = require('clean-webpack-plugin');
 const ManifestPlugin = require('webpack-manifest-plugin');
 
 module.exports = {
+    mode: 'development',
     entry: './src/main.js',
     output: {
-        path: path.resolve(__dirname, './dist'),
+        path: path.resolve(__dirname, './static'),
         filename: 'bundle.js'
+    },
+    devtool: 'eval',
+    devServer: {
+        contentBase: './dist'
     },
     module: {
         rules: [
@@ -47,7 +52,7 @@ module.exports = {
             template: 'src/index.html'
         }),
         new VueLoaderPlugin(),
-        new CleanWebpackPlugin(['dist']),
+        // new CleanWebpackPlugin(['dist']),
         new ManifestPlugin()
     ]
 };

@@ -1,4 +1,4 @@
-# git 项目局部配置
+# git 为单独的项目配置用户
 
 > 参考：[Git多用户，不同项目配置不同Git账号](https://blog.csdn.net/onTheRoadToMine/article/details/79029331)
 

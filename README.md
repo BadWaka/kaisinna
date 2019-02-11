@@ -2,6 +2,8 @@
 
 kaisinna
 
+> [lottie 动效库示例 CodePen](https://codepen.io/collection/nVYWZR/)
+
 ## 开发
 
 ```sh

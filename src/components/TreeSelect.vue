@@ -1,15 +1,17 @@
 <template>
     <div
     >
-        Components
-        <tree-select></tree-select>
+        TreeSelect
     </div>
 </template>
 
 <script>
-import TreeSelect from '../components/TreeSelect.vue';
-
 export default {
+    props: {
+        options: {
+            type: String
+        }
+    },
     data() {
         return {
         }
@@ -17,9 +19,6 @@ export default {
     mounted() {
     },
     methods: {
-    },
-    components: {
-        TreeSelect
     }
 }
 </script>

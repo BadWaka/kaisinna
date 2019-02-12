@@ -5,7 +5,17 @@
         <div
             v-for="(option, optionIndex) in options"
             :key="optionIndex"
+            :class="[
+                option.selected
+                    ? 'option-selected'
+                    : ''
+            ]"
             class="option"
+            @click="onOptionClick({
+                option,
+                optionIndex,
+                options
+            })"
         >
             {{ option.nameCN }} {{ option.name }}
         </div>
@@ -26,6 +36,13 @@ export default {
     mounted() {
     },
     methods: {
+        onOptionClick(obj) {
+            for (let i = 0; i < obj.options.length; i++) {
+                let option = obj.options[i];
+                this.$set(option, 'selected', false);
+            }
+            this.$set(obj.option, 'selected', true);
+        }
     }
 }
 </script>
@@ -34,5 +51,8 @@ export default {
 .option {
     padding: 10px 20px;
     cursor: pointer;
+}
+.option-selected {
+    background-color: #999;
 }
 </style>

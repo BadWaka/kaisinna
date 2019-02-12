@@ -1,17 +1,18 @@
+<!-- 组件首页 -->
 <template>
     <div
         class="component-index"
     >
-        <div
-            :style="{
-                'height': '20px'
-            }"
-        >
-        </div>
         <tree-select
             :options="treeSelect.options"
+            class="tree-select"
         >
         </tree-select>
+        <div
+            class="right"
+        >
+
+        </div>
     </div>
 </template>
 
@@ -46,6 +47,14 @@ export default {
 </script>
 
 <style lang="less" scoped>
-.k-header {
+.component-index {
+    display: flex;
+    padding-top: 20px;
+    .tree-select {
+        flex: 1;
+    }
+    .right {
+        flex: 3;
+    }
 }
 </style>

@@ -11,7 +11,6 @@
         <div
             class="right"
         >
-
         </div>
     </div>
 </template>

@@ -54,5 +54,6 @@ export default {
 }
 .option-selected {
     background-color: #999;
+    color: #fff;
 }
 </style>

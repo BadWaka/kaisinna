@@ -238,7 +238,7 @@ eval("\n/**\n * When source maps are enabled, `style-loader` uses a link element
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _components_KHeader_vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./components/KHeader.vue */ \"./src/components/KHeader.vue\");\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n\n\n\n/* harmony default export */ __webpack_exports__[\"default\"] = ({\n    data() {\n        return {\n        }\n    },\n    components: {\n        KHeader: _components_KHeader_vue__WEBPACK_IMPORTED_MODULE_0__[\"default\"]\n    }\n});\n\n\n//# sourceURL=webpack:///./src/App.vue?./node_modules/vue-loader/lib??vue-loader-options");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _components_KHeader_vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./components/KHeader.vue */ \"./src/components/KHeader.vue\");\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n\n\n\n/* harmony default export */ __webpack_exports__[\"default\"] = ({\n    data() {\n        return {\n        }\n    },\n    components: {\n        KHeader: _components_KHeader_vue__WEBPACK_IMPORTED_MODULE_0__[\"default\"]\n    }\n});\n\n\n//# sourceURL=webpack:///./src/App.vue?./node_modules/vue-loader/lib??vue-loader-options");
 
 /***/ }),
 

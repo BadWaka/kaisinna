@@ -6,13 +6,6 @@
         >
         </div>
         <router-view></router-view>
-        <!-- 占位 -->
-        <!-- <div
-            v-for="i in 100"
-            :key="i"
-        >
-            {{ i }}
-        </div> -->
     </div>
 </template>
 

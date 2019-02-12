@@ -10,7 +10,7 @@ module.exports = {
     entry: './src/main.js',
     output: {
         path: path.resolve(__dirname, './static'),
-        filename: 'bundle.js'
+        filename: '[name].bundle.js'
     },
     devtool: 'eval',
     devServer: {
@@ -68,5 +68,10 @@ module.exports = {
         new VueLoaderPlugin(),
         // new CleanWebpackPlugin(['dist']),
         new ManifestPlugin()
-    ]
+    ],
+    optimization: {
+        splitChunks: {
+            chunks: 'all'
+        }
+    }
 };

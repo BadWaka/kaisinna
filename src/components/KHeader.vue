@@ -8,11 +8,19 @@
         <div class="title">
             Kaisinna
         </div>
+        <div
+            ref="lottie"
+            :style="{
+                width: '100px'
+            }"
+        >
+        </div>
     </div>
 </template>
 
 <script>
 import ScrollMixin from '../mixins/scrollMixin.js';
+import Lottie from '../js/lottie.js';
 
 export default {
     mixins: [ScrollMixin],
@@ -22,7 +30,12 @@ export default {
         }
     },
     mounted() {
-        console.log('mounted');
+        console.log('mounted', Lottie);
+        Lottie.loadAnimation({
+            container: this.$refs.lottie,
+            loop: true,
+            path: 'https://labs.nearpod.com/bodymovin/demo/pancakes/data.json'
+        });
     },
     methods: {
         // 向上滑动
@@ -41,6 +54,7 @@ export default {
 .k-header {
     position: fixed;
     display: flex;
+    justify-content: space-between;
     align-items: center;
     padding: 0 20px;
     top: 0;

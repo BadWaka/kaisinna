@@ -1,0 +1,34 @@
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>
+        lottie demo
+    </title>
+    <link rel="stylesheet" href="./css/reset.css">
+</head>
+
+<body>
+    <div
+        id="lottieDemo1"
+        style="width:100px;height:100px"
+    >
+        lottieDemo1
+    </div>
+    <script src="./js/lottie.js"></script>
+    <script>
+        window.onload = function() {
+            console.log('window.onload');
+            let domLottieDemo1 = document.getElementById('lottieDemo1');
+            lottie.loadAnimation({
+                container: domLottieDemo1,
+                renderer: 'svg',
+                loop: true,
+                autoplay: true,
+                path: './json/shape.json'
+            });
+        };
+    </script>
+</body>
+
+</html>

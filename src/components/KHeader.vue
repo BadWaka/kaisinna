@@ -9,11 +9,21 @@
             Kaisinna
         </div>
         <div
-            ref="lottie"
-            :style="{
-                width: '100px'
-            }"
+            class="right"
         >
+            <div
+                class="mg-r"
+            >
+                组件
+            </div>
+            <!-- 动效 -->
+            <div
+                ref="lottie"
+                :style="{
+                    width: '100px'
+                }"
+            >
+            </div>
         </div>
     </div>
 </template>
@@ -67,6 +77,11 @@ export default {
     .title {
         color: #fff;
         font-size: 24px;
+    }
+    .right {
+        display: flex;
+        align-items: center;
+        color: #fff;
     }
 }
 </style>

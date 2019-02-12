@@ -5,6 +5,7 @@
             class="margin-header"
         >
         </div>
+        <router-view></router-view>
         <!-- 占位 -->
         <!-- <div
             v-for="i in 100"

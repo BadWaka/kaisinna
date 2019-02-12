@@ -62,7 +62,8 @@ export default {
     right: 0;
     height: 72px;
     background-color: #202124;
-    transition: all .5s ease-in-out;
+    transition: all .5s cubic-bezier(.4,0,.2,1);
+    box-shadow: 2px 4px 10px rgba(0,0,0,.2);
     .title {
         color: #fff;
         font-size: 24px;

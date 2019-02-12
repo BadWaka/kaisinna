@@ -1,6 +1,8 @@
 /**
  * 滚动 mixin
  */
+import Lodash from 'lodash';
+
 export default {
     data() {
         return {
@@ -8,6 +10,7 @@ export default {
         }
     },
     mounted() {
+        console.log('Lodash', Lodash);
         window.onscroll = this.scrollMixinOnWindowScroll;
     },
     methods: {

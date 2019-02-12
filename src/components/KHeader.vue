@@ -13,6 +13,13 @@
         >
             <div
                 class="mg-r"
+                @click="indexClick"
+            >
+                主页
+            </div>
+            <div
+                class="mg-r"
+                @click="componentClick"
             >
                 组件
             </div>
@@ -55,6 +62,12 @@ export default {
         // 向下滑动
         scrollMixinScrollDown() {
             this.top = '-72px';
+        },
+        indexClick() {
+            this.$router.push('/');
+        },
+        componentClick() {
+            this.$router.push('/components');
         }
     }
 }

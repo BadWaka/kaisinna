@@ -33,5 +33,6 @@ export default {
 <style lang="less" scoped>
 .option {
     padding: 10px 20px;
+    cursor: pointer;
 }
 </style>

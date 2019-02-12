@@ -12,16 +12,15 @@
             class="right"
         >
             <div
-                class="mg-r"
-                @click="indexClick"
+                v-for="(nav, navIndex) in navs"
+                :key="navIndex"
+                class="mg-r nav-item"
+                @click="navItemClick({
+                    nav,
+                    navIndex
+                })"
             >
-                主页
-            </div>
-            <div
-                class="mg-r"
-                @click="componentClick"
-            >
-                组件
+                {{ nav.text }}
             </div>
             <!-- 动效 -->
             <div
@@ -43,7 +42,17 @@ export default {
     mixins: [ScrollMixin],
     data() {
         return {
-            top: 0
+            top: 0,
+            navs: [
+                {
+                    text: '主页',
+                    route: '/'
+                },
+                {
+                    text: '组件',
+                    route: '/components'
+                }
+            ]
         }
     },
     mounted() {
@@ -63,11 +72,8 @@ export default {
         scrollMixinScrollDown() {
             this.top = '-72px';
         },
-        indexClick() {
-            this.$router.push('/');
-        },
-        componentClick() {
-            this.$router.push('/components');
+        navItemClick(obj) {
+            this.$router.push(obj.nav.route);
         }
     }
 }
@@ -95,6 +101,9 @@ export default {
         display: flex;
         align-items: center;
         color: #fff;
+        .nav-item {
+            cursor: pointer;
+        }
     }
 }
 </style>

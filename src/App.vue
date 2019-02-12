@@ -5,12 +5,13 @@
             class="margin-header"
         >
         </div>
-        <div
+        <!-- 占位 -->
+        <!-- <div
             v-for="i in 100"
             :key="i"
         >
             {{ i }}
-        </div>
+        </div> -->
     </div>
 </template>
 
@@ -28,7 +29,7 @@ export default {
 }
 </script>
 
-<style scoped>
+<style lang="less" scoped>
 .margin-header {
     margin-top: 72px;
 }

@@ -20,7 +20,7 @@
 
 <script>
 import ScrollMixin from '../mixins/scrollMixin.js';
-import Lottie from '../js/lottie.js';
+import Lottie from 'lottie';
 
 export default {
     mixins: [ScrollMixin],

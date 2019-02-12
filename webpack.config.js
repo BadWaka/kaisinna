@@ -4,6 +4,8 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const VueLoaderPlugin = require('vue-loader/lib/plugin');
 const CleanWebpackPlugin = require('clean-webpack-plugin');
 const ManifestPlugin = require('webpack-manifest-plugin');
+// 分析 bundle.js 里的到底用了哪些玩意儿
+const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin;
 
 module.exports = {
     mode: 'development',
@@ -67,11 +69,20 @@ module.exports = {
         }),
         new VueLoaderPlugin(),
         // new CleanWebpackPlugin(['dist']),
-        new ManifestPlugin()
+        new ManifestPlugin(),
+        new BundleAnalyzerPlugin()
     ],
-    optimization: {
-        splitChunks: {
-            chunks: 'all'
-        }
+    // 代码分离，将公共的依赖模块提取到已有的入口 chunk 中，或者提取到一个新生成的 chunk
+    // optimization: {
+    //     splitChunks: {
+    //         chunks: 'all'
+    //     }
+    // },
+    // 外部 js，全局引入 js，减少 bundle.js 的体积
+    externals: {
+        lodash: '_',
+        lottie: 'lottie',
+        vue: 'Vue'
     }
+
 };

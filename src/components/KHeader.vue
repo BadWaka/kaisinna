@@ -1,5 +1,11 @@
 <template>
-    <div class="k-header">
+    <div
+        :style="{
+            transform: 'translateY(' + translateY + 'px)',
+            webkitTransform: 'translateY(' + translateY + 'px)'
+        }"
+        class="k-header"
+    >
         KHeader
     </div>
 </template>
@@ -11,12 +17,19 @@ export default {
     mixins: [ScrollMixin],
     data() {
         return {
+            translateY: 0
         }
     },
     mounted() {
         console.log('mounted');
     },
     methods: {
+        scrollMixinScrollUp() {
+            this.translateY = 0;
+        },
+        scrollMixinScrollDown() {
+            this.translateY = -72;
+        }
     }
 }
 </script>
@@ -29,5 +42,6 @@ export default {
     right: 0;
     height: 72px;
     background-color: #202124;
+    transition: transform .3s cubic-bezier(.4,0,.2,1) .3s,opacity 0s .3s;
 }
 </style>

@@ -5,12 +5,7 @@
             class="margin-header"
         >
         </div>
-        <div
-            v-for="i in 100"
-            :key="i"
-        >
-            {{ i }}
-        </div>
+        <router-view></router-view>
     </div>
 </template>
 
@@ -28,7 +23,7 @@ export default {
 }
 </script>
 
-<style scoped>
+<style lang="less" scoped>
 .margin-header {
     margin-top: 72px;
 }

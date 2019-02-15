@@ -43,7 +43,6 @@ export default {
 
     },
     methods: {
-
     },
     components: {
         TreeSelect

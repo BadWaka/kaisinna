@@ -59,6 +59,12 @@ module.exports = {
                 use: [
                     'file-loader'
                 ]
+            },
+            {
+                test: /\.txt$/,
+                use: [
+                    'kai-loader'
+                ]
             }
         ]
     },

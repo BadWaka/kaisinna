@@ -19,8 +19,7 @@
 <script>
 import TreeSelect from '../components/TreeSelect/TreeSelect.vue';
 import marked from 'marked';
-
-console.log('marked', marked);
+// import README from '../components/Button/README.md';
 
 export default {
     data() {
@@ -40,8 +39,11 @@ export default {
         }
     },
     mounted() {
+        console.log('组件主页 mounted marked', marked);
+
     },
     methods: {
+
     },
     components: {
         TreeSelect

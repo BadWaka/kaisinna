@@ -11,13 +11,16 @@
         <div
             class="right"
         >
-            
+
         </div>
     </div>
 </template>
 
 <script>
 import TreeSelect from '../components/TreeSelect/TreeSelect.vue';
+import marked from 'marked';
+
+console.log('marked', marked);
 
 export default {
     data() {

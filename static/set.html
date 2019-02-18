@@ -1,0 +1,28 @@
+<html>
+
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>
+        es6 set demo
+    </title>
+    <link rel="stylesheet" href="./css/reset.css">
+</head>
+
+<body>
+    <div>
+        html
+        <br>
+        http://es6.ruanyifeng.com/#docs/set-map
+    </div>
+    <script>
+        window.onload = function() {
+            const s = new Set();
+            [2, 3, 5, 4, 5, 2, 2].forEach(x => s.add(x));
+
+            console.log('s', s.size);
+        };
+    </script>
+</body>
+
+</html>

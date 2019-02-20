@@ -1,0 +1,37 @@
+{
+    "props": {},
+    "slots": {},
+    "events": {},
+    "methods": {
+        "func1": {
+            "name": "func1",
+            "description": "测试方法1",
+            "params": [{
+                "type": {
+                    "names": ["string"]
+                },
+                "description": "参数1",
+                "name": "a"
+            }, {
+                "type": {
+                    "names": ["number"]
+                },
+                "description": "参数2",
+                "name": "b"
+            }, {
+                "type": {
+                    "names": ["boolean"]
+                },
+                "description": "参数3",
+                "name": "c"
+            }],
+            "returns": [{
+                "type": {
+                    "names": ["number"]
+                },
+                "description": "res 结果"
+            }],
+            "comment": "/**\n         * 测试方法1\n         *\n         * @param {string} a 参数1\n         * @param {number} b 参数2\n         * @param {boolean} c 参数3\n         * @return {number} res 结果\n         */"
+        }
+    }
+}

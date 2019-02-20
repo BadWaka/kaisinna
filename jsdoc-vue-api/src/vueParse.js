@@ -49,7 +49,12 @@ let parseVue = (filePath) => {
     });
     // console.log('jsdocObj', jsdocObj);
 
-    getDocObj(jsObj, jsdocObj);
+    let docObj = getDocObj(jsObj, jsdocObj);
+    fs.writeFile('./docObj.json', JSON.stringify(docObj), (err) => {
+        if (err) {
+            console.log('err', err);
+        }
+    });
 
 };
 

@@ -5,7 +5,10 @@ const vueTemplateCompiler = require('vue-template-compiler');
 const babel = require('@babel/core');
 
 let parseVue = (filePath) => {
-    // 判断 .vue 文件
+    // 转换成绝对路径
+    filePath = path.resolve(__dirname, filePath);
+
+    // 判断是否 .vue 文件
     let extname = path.extname(filePath);
     if (extname !== '.vue') {
         console.error('不是 .vue 文件');
@@ -28,6 +31,6 @@ module.exports = {
     parseVue
 };
 
-let test = '../../test/test.vue';
+let test = '../test/test.vue';
 parseVue(test);
 

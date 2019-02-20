@@ -10,19 +10,19 @@
                 "type": {
                     "names": ["string"]
                 },
-                "description": "参数1",
+                "description": "参数a",
                 "name": "a"
             }, {
                 "type": {
                     "names": ["number"]
                 },
-                "description": "参数2",
+                "description": "参数b",
                 "name": "b"
             }, {
                 "type": {
                     "names": ["boolean"]
                 },
-                "description": "参数3",
+                "description": "参数c",
                 "name": "c"
             }],
             "returns": [{
@@ -31,7 +31,37 @@
                 },
                 "description": "res 结果"
             }],
-            "comment": "/**\n         * 测试方法1\n         *\n         * @param {string} a 参数1\n         * @param {number} b 参数2\n         * @param {boolean} c 参数3\n         * @return {number} res 结果\n         */"
+            "comment": "/**\n         * 测试方法1\n         *\n         * @param {string} a 参数a\n         * @param {number} b 参数b\n         * @param {boolean} c 参数c\n         * @return {number} res 结果\n         */"
+        },
+        "func2": {
+            "name": "func2",
+            "description": "测试方法1",
+            "params": [{
+                "type": {
+                    "names": ["string"]
+                },
+                "description": "参数d",
+                "name": "d"
+            }, {
+                "type": {
+                    "names": ["number"]
+                },
+                "description": "参数e",
+                "name": "e"
+            }, {
+                "type": {
+                    "names": ["boolean"]
+                },
+                "description": "参数f",
+                "name": "f"
+            }],
+            "returns": [{
+                "type": {
+                    "names": ["string"]
+                },
+                "description": "res 结果"
+            }],
+            "comment": "/**\n         * 测试方法1\n         *\n         * @param {string} d 参数d\n         * @param {number} e 参数e\n         * @param {boolean} f 参数f\n         * @return {string} res 结果\n         */"
         }
     }
 }

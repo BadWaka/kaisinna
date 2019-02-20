@@ -10,10 +10,12 @@ const getDocObj = (jsObj, jsdocObj) => {
 
     jsdocObj.forEach((commentItem, commentIndex) => {
         console.log('commentItem', commentItem);
+
         // props
         if (commentItem.memberof === 'module.exports.props') {
 
         }
+
         // methods；注释必须存在，没有注释则认为是私有方法，不暴露
         else if (commentItem.memberof === 'module.exports.methods' && commentItem.comment) {
             let methodObj = {
@@ -25,6 +27,7 @@ const getDocObj = (jsObj, jsdocObj) => {
             };
             docObj.methods[commentItem.name] = methodObj;
         }
+        
         // events
         else if (commentItem.kind === 'event') {
 

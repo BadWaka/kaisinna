@@ -40,13 +40,25 @@ export default {
         /**
          * 测试方法1
          *
-         * @param {string} a 参数1
-         * @param {number} b 参数2
-         * @param {boolean} c 参数3
+         * @param {string} a 参数a
+         * @param {number} b 参数b
+         * @param {boolean} c 参数c
          * @return {number} res 结果
          */
         func1(a, b, c) {
             return 0;
+        },
+
+        /**
+         * 测试方法1
+         *
+         * @param {string} d 参数d
+         * @param {number} e 参数e
+         * @param {boolean} f 参数f
+         * @return {string} res 结果
+         */
+        func2(d, e, f) {
+            return 'demacia';
         },
 
         onClick(e) {

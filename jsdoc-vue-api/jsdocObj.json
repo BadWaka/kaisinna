@@ -1,8 +1,8 @@
 [{
     "comment": "",
     "meta": {
-        "range": [1, 400],
-        "filename": "bp96kjgk3vo6pj6rj960yd.js",
+        "range": [1, 1070],
+        "filename": "zhebg4c2d52lq6o51517.js",
         "lineno": 2,
         "columnno": 0,
         "path": "/var/folders/8l/qdhnfvy52rd1jt77_dnz0ghw0000gn/T",
@@ -22,7 +22,7 @@
     "comment": "",
     "meta": {
         "range": [22, 306],
-        "filename": "bp96kjgk3vo6pj6rj960yd.js",
+        "filename": "zhebg4c2d52lq6o51517.js",
         "lineno": 3,
         "columnno": 4,
         "path": "/var/folders/8l/qdhnfvy52rd1jt77_dnz0ghw0000gn/T",
@@ -43,7 +43,7 @@
     "comment": "/**\n         * 选项数组\n         *\n         * @property {string} str='aaa' 测试字符串\n         */",
     "meta": {
         "range": [136, 180],
-        "filename": "bp96kjgk3vo6pj6rj960yd.js",
+        "filename": "zhebg4c2d52lq6o51517.js",
         "lineno": 9,
         "columnno": 8,
         "path": "/var/folders/8l/qdhnfvy52rd1jt77_dnz0ghw0000gn/T",
@@ -72,7 +72,7 @@
     "comment": "",
     "meta": {
         "range": [159, 170],
-        "filename": "bp96kjgk3vo6pj6rj960yd.js",
+        "filename": "zhebg4c2d52lq6o51517.js",
         "lineno": 10,
         "columnno": 12,
         "path": "/var/folders/8l/qdhnfvy52rd1jt77_dnz0ghw0000gn/T",
@@ -93,7 +93,7 @@
     "comment": "/**\n         * 按钮的文案\n         */",
     "meta": {
         "range": [231, 300],
-        "filename": "bp96kjgk3vo6pj6rj960yd.js",
+        "filename": "zhebg4c2d52lq6o51517.js",
         "lineno": 15,
         "columnno": 8,
         "path": "/var/folders/8l/qdhnfvy52rd1jt77_dnz0ghw0000gn/T",
@@ -114,7 +114,7 @@
     "comment": "",
     "meta": {
         "range": [251, 263],
-        "filename": "bp96kjgk3vo6pj6rj960yd.js",
+        "filename": "zhebg4c2d52lq6o51517.js",
         "lineno": 16,
         "columnno": 12,
         "path": "/var/folders/8l/qdhnfvy52rd1jt77_dnz0ghw0000gn/T",
@@ -135,7 +135,7 @@
     "comment": "",
     "meta": {
         "range": [277, 290],
-        "filename": "bp96kjgk3vo6pj6rj960yd.js",
+        "filename": "zhebg4c2d52lq6o51517.js",
         "lineno": 17,
         "columnno": 12,
         "path": "/var/folders/8l/qdhnfvy52rd1jt77_dnz0ghw0000gn/T",
@@ -156,7 +156,7 @@
     "comment": "",
     "meta": {
         "range": [312, 353],
-        "filename": "bp96kjgk3vo6pj6rj960yd.js",
+        "filename": "zhebg4c2d52lq6o51517.js",
         "lineno": 20,
         "columnno": 4,
         "path": "/var/folders/8l/qdhnfvy52rd1jt77_dnz0ghw0000gn/T",
@@ -176,7 +176,7 @@
     "comment": "",
     "meta": {
         "range": [359, 376],
-        "filename": "bp96kjgk3vo6pj6rj960yd.js",
+        "filename": "zhebg4c2d52lq6o51517.js",
         "lineno": 24,
         "columnno": 4,
         "path": "/var/folders/8l/qdhnfvy52rd1jt77_dnz0ghw0000gn/T",
@@ -195,8 +195,8 @@
 }, {
     "comment": "",
     "meta": {
-        "range": [382, 398],
-        "filename": "bp96kjgk3vo6pj6rj960yd.js",
+        "range": [382, 1068],
+        "filename": "zhebg4c2d52lq6o51517.js",
         "lineno": 26,
         "columnno": 4,
         "path": "/var/folders/8l/qdhnfvy52rd1jt77_dnz0ghw0000gn/T",
@@ -204,7 +204,7 @@
             "id": "astnode100000024",
             "name": "methods",
             "type": "ObjectExpression",
-            "value": "{}"
+            "value": "{\"func1\":\"\",\"onClick\":\"\",\"onTouchStart\":\"\"}"
         }
     },
     "undocumented": true,
@@ -214,7 +214,134 @@
     "memberof": "module.exports",
     "scope": "static"
 }, {
+    "comment": "/**\n         * 测试方法1\n         *\n         * @param {string} a 参数1\n         * @param {number} b 参数2\n         * @param {boolean} c 参数3\n         * @return {number} res 结果\n         */",
+    "meta": {
+        "range": [588, 636],
+        "filename": "zhebg4c2d52lq6o51517.js",
+        "lineno": 35,
+        "columnno": 8,
+        "path": "/var/folders/8l/qdhnfvy52rd1jt77_dnz0ghw0000gn/T",
+        "code": {
+            "id": "astnode100000026",
+            "name": "func1",
+            "type": "FunctionExpression"
+        }
+    },
+    "description": "测试方法1",
+    "params": [{
+        "type": {
+            "names": ["string"]
+        },
+        "description": "参数1",
+        "name": "a"
+    }, {
+        "type": {
+            "names": ["number"]
+        },
+        "description": "参数2",
+        "name": "b"
+    }, {
+        "type": {
+            "names": ["boolean"]
+        },
+        "description": "参数3",
+        "name": "c"
+    }],
+    "returns": [{
+        "type": {
+            "names": ["number"]
+        },
+        "description": "res 结果"
+    }],
+    "name": "func1",
+    "longname": "module.exports.methods.func1",
+    "kind": "function",
+    "memberof": "module.exports.methods",
+    "scope": "static"
+}, {
+    "comment": "",
+    "meta": {
+        "range": [647, 841],
+        "filename": "zhebg4c2d52lq6o51517.js",
+        "lineno": 39,
+        "columnno": 8,
+        "path": "/var/folders/8l/qdhnfvy52rd1jt77_dnz0ghw0000gn/T",
+        "code": {
+            "id": "astnode100000034",
+            "name": "onClick",
+            "type": "FunctionExpression"
+        }
+    },
+    "undocumented": true,
+    "name": "onClick",
+    "longname": "module.exports.methods.onClick",
+    "kind": "function",
+    "memberof": "module.exports.methods",
+    "scope": "static"
+}, {
+    "comment": "/**\n             * 点击事件\n             *\n             * @event click\n             * @property {Event} e 事件对象\n             */",
+    "meta": {
+        "filename": "zhebg4c2d52lq6o51517.js",
+        "lineno": 41,
+        "columnno": 12,
+        "path": "/var/folders/8l/qdhnfvy52rd1jt77_dnz0ghw0000gn/T",
+        "code": {}
+    },
+    "description": "点击事件",
+    "kind": "event",
+    "name": "click",
+    "properties": [{
+        "type": {
+            "names": ["Event"]
+        },
+        "description": "事件对象",
+        "name": "e"
+    }],
+    "longname": "event:click",
+    "scope": "global"
+}, {
+    "comment": "",
+    "meta": {
+        "range": [852, 1062],
+        "filename": "zhebg4c2d52lq6o51517.js",
+        "lineno": 50,
+        "columnno": 8,
+        "path": "/var/folders/8l/qdhnfvy52rd1jt77_dnz0ghw0000gn/T",
+        "code": {
+            "id": "astnode100000045",
+            "name": "onTouchStart",
+            "type": "FunctionExpression"
+        }
+    },
+    "undocumented": true,
+    "name": "onTouchStart",
+    "longname": "module.exports.methods.onTouchStart",
+    "kind": "function",
+    "memberof": "module.exports.methods",
+    "scope": "static"
+}, {
+    "comment": "/**\n             * 触摸开始事件\n             *\n             * @event touchstart\n             * @property {Event} e 事件对象\n             */",
+    "meta": {
+        "filename": "zhebg4c2d52lq6o51517.js",
+        "lineno": 52,
+        "columnno": 12,
+        "path": "/var/folders/8l/qdhnfvy52rd1jt77_dnz0ghw0000gn/T",
+        "code": {}
+    },
+    "description": "触摸开始事件",
+    "kind": "event",
+    "name": "touchstart",
+    "properties": [{
+        "type": {
+            "names": ["Event"]
+        },
+        "description": "事件对象",
+        "name": "e"
+    }],
+    "longname": "event:touchstart",
+    "scope": "global"
+}, {
     "kind": "package",
     "longname": "package:undefined",
-    "files": ["/var/folders/8l/qdhnfvy52rd1jt77_dnz0ghw0000gn/T/bp96kjgk3vo6pj6rj960yd.js"]
+    "files": ["/var/folders/8l/qdhnfvy52rd1jt77_dnz0ghw0000gn/T/zhebg4c2d52lq6o51517.js"]
 }]

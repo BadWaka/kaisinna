@@ -11,8 +11,22 @@ let parseVue = (filePath) => {
     let fileStr = fs.readFileSync(filePath, 'utf8');
     // 使用 vue-template-compiler 编译单文件组件
     let sfcObj = vueTemplateCompiler.parseComponent(fileStr);
-    let jsObj = eval(sfcObj.script.content);
-    console.log('jsObj', jsObj);
+    // console.log(babelCore.transform(sfcObj.script.content).code);
+
+    // 先保存为 js 文件，再 require
+    // fs.writeFileSync('./script.js', sfcObj.script.content);
+    // let a = require('./script.js');
+    // console.log('a', a);
+
+    // babelCore.transformSync(sfcObj.script.content, {}, (err, result) => {
+    //     let es5Code = result.code;
+    //     console.log('es5Code', es5Code);
+    // });
+
+    let a = babelCore.transformSync(sfcObj.script.content);
+    // let a = eval(babelCore.transformSync(sfcObj.script.content).code);
+    console.log('a', a);
+
     // console.log('sfcObj', sfcObj);
 };
 

@@ -1,0 +1,220 @@
+[{
+    "comment": "",
+    "meta": {
+        "range": [1, 400],
+        "filename": "bp96kjgk3vo6pj6rj960yd.js",
+        "lineno": 2,
+        "columnno": 0,
+        "path": "/var/folders/8l/qdhnfvy52rd1jt77_dnz0ghw0000gn/T",
+        "code": {
+            "id": "astnode100000002",
+            "name": "module.exports",
+            "type": "ObjectExpression"
+        }
+    },
+    "undocumented": true,
+    "name": "exports",
+    "longname": "module.exports",
+    "kind": "member",
+    "memberof": "module",
+    "scope": "static"
+}, {
+    "comment": "",
+    "meta": {
+        "range": [22, 306],
+        "filename": "bp96kjgk3vo6pj6rj960yd.js",
+        "lineno": 3,
+        "columnno": 4,
+        "path": "/var/folders/8l/qdhnfvy52rd1jt77_dnz0ghw0000gn/T",
+        "code": {
+            "id": "astnode100000004",
+            "name": "props",
+            "type": "ObjectExpression",
+            "value": "{\"options\":\"\",\"text\":\"\"}"
+        }
+    },
+    "undocumented": true,
+    "name": "props",
+    "longname": "module.exports.props",
+    "kind": "member",
+    "memberof": "module.exports",
+    "scope": "static"
+}, {
+    "comment": "/**\n         * 选项数组\n         *\n         * @property {string} str='aaa' 测试字符串\n         */",
+    "meta": {
+        "range": [136, 180],
+        "filename": "bp96kjgk3vo6pj6rj960yd.js",
+        "lineno": 9,
+        "columnno": 8,
+        "path": "/var/folders/8l/qdhnfvy52rd1jt77_dnz0ghw0000gn/T",
+        "code": {
+            "id": "astnode100000006",
+            "name": "options",
+            "type": "ObjectExpression",
+            "value": "{\"type\":\"\"}"
+        }
+    },
+    "description": "选项数组",
+    "properties": [{
+        "type": {
+            "names": ["string"]
+        },
+        "defaultvalue": "'aaa'",
+        "description": "测试字符串",
+        "name": "str"
+    }],
+    "name": "options",
+    "longname": "module.exports.props.options",
+    "kind": "member",
+    "memberof": "module.exports.props",
+    "scope": "static"
+}, {
+    "comment": "",
+    "meta": {
+        "range": [159, 170],
+        "filename": "bp96kjgk3vo6pj6rj960yd.js",
+        "lineno": 10,
+        "columnno": 12,
+        "path": "/var/folders/8l/qdhnfvy52rd1jt77_dnz0ghw0000gn/T",
+        "code": {
+            "id": "astnode100000008",
+            "name": "type",
+            "type": "Identifier",
+            "value": "Array"
+        }
+    },
+    "undocumented": true,
+    "name": "type",
+    "longname": "module.exports.props.options.type",
+    "kind": "member",
+    "memberof": "module.exports.props.options",
+    "scope": "static"
+}, {
+    "comment": "/**\n         * 按钮的文案\n         */",
+    "meta": {
+        "range": [231, 300],
+        "filename": "bp96kjgk3vo6pj6rj960yd.js",
+        "lineno": 15,
+        "columnno": 8,
+        "path": "/var/folders/8l/qdhnfvy52rd1jt77_dnz0ghw0000gn/T",
+        "code": {
+            "id": "astnode100000010",
+            "name": "text",
+            "type": "ObjectExpression",
+            "value": "{\"type\":\"\",\"default\":\"文案\"}"
+        }
+    },
+    "description": "按钮的文案",
+    "name": "text",
+    "longname": "module.exports.props.text",
+    "kind": "member",
+    "memberof": "module.exports.props",
+    "scope": "static"
+}, {
+    "comment": "",
+    "meta": {
+        "range": [251, 263],
+        "filename": "bp96kjgk3vo6pj6rj960yd.js",
+        "lineno": 16,
+        "columnno": 12,
+        "path": "/var/folders/8l/qdhnfvy52rd1jt77_dnz0ghw0000gn/T",
+        "code": {
+            "id": "astnode100000012",
+            "name": "type",
+            "type": "Identifier",
+            "value": "String"
+        }
+    },
+    "undocumented": true,
+    "name": "type",
+    "longname": "module.exports.props.text.type",
+    "kind": "member",
+    "memberof": "module.exports.props.text",
+    "scope": "static"
+}, {
+    "comment": "",
+    "meta": {
+        "range": [277, 290],
+        "filename": "bp96kjgk3vo6pj6rj960yd.js",
+        "lineno": 17,
+        "columnno": 12,
+        "path": "/var/folders/8l/qdhnfvy52rd1jt77_dnz0ghw0000gn/T",
+        "code": {
+            "id": "astnode100000014",
+            "name": "default",
+            "type": "Literal",
+            "value": "文案"
+        }
+    },
+    "undocumented": true,
+    "name": "default",
+    "longname": "module.exports.props.text.default",
+    "kind": "member",
+    "memberof": "module.exports.props.text",
+    "scope": "static"
+}, {
+    "comment": "",
+    "meta": {
+        "range": [312, 353],
+        "filename": "bp96kjgk3vo6pj6rj960yd.js",
+        "lineno": 20,
+        "columnno": 4,
+        "path": "/var/folders/8l/qdhnfvy52rd1jt77_dnz0ghw0000gn/T",
+        "code": {
+            "id": "astnode100000016",
+            "name": "data",
+            "type": "FunctionExpression"
+        }
+    },
+    "undocumented": true,
+    "name": "data",
+    "longname": "module.exports.data",
+    "kind": "function",
+    "memberof": "module.exports",
+    "scope": "static"
+}, {
+    "comment": "",
+    "meta": {
+        "range": [359, 376],
+        "filename": "bp96kjgk3vo6pj6rj960yd.js",
+        "lineno": 24,
+        "columnno": 4,
+        "path": "/var/folders/8l/qdhnfvy52rd1jt77_dnz0ghw0000gn/T",
+        "code": {
+            "id": "astnode100000021",
+            "name": "mounted",
+            "type": "FunctionExpression"
+        }
+    },
+    "undocumented": true,
+    "name": "mounted",
+    "longname": "module.exports.mounted",
+    "kind": "function",
+    "memberof": "module.exports",
+    "scope": "static"
+}, {
+    "comment": "",
+    "meta": {
+        "range": [382, 398],
+        "filename": "bp96kjgk3vo6pj6rj960yd.js",
+        "lineno": 26,
+        "columnno": 4,
+        "path": "/var/folders/8l/qdhnfvy52rd1jt77_dnz0ghw0000gn/T",
+        "code": {
+            "id": "astnode100000024",
+            "name": "methods",
+            "type": "ObjectExpression",
+            "value": "{}"
+        }
+    },
+    "undocumented": true,
+    "name": "methods",
+    "longname": "module.exports.methods",
+    "kind": "member",
+    "memberof": "module.exports",
+    "scope": "static"
+}, {
+    "kind": "package",
+    "longname": "package:undefined",
+    "files": ["/var/folders/8l/qdhnfvy52rd1jt77_dnz0ghw0000gn/T/bp96kjgk3vo6pj6rj960yd.js"]
+}]

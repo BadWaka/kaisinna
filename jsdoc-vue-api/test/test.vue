@@ -14,6 +14,8 @@ export default {
     props: {
         /**
          * 选项数组
+         *
+         * @property {string} str='aaa' 测试字符串
          */
         options: {
             type: Array

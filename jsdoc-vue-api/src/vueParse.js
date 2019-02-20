@@ -3,6 +3,9 @@ const fs = require('fs');
 const path = require('path');
 const vueTemplateCompiler = require('vue-template-compiler');
 const babel = require('@babel/core');
+const {
+    getProps
+} = require('./getProps');
 
 /**
  * 解析 .vue 文件
@@ -26,24 +29,25 @@ let parseVue = (filePath) => {
     let sfcObj = vueTemplateCompiler.parseComponent(fileStr);
     // console.log('sfcObj', sfcObj);
 
+    // 用 eval 执行 js 部分，得到 js 对象
+    let jsObj = eval(babel.transformSync(sfcObj.script.content).code);
+    fs.writeFile('./jsObj.json', JSON.stringify(jsObj));
+    // console.log('jsObj', jsObj);
+
     // 用 jsdoc-api 解析，得到 jsdoc 解析结果对象
     let jsdocObj = jsdocApi.explainSync({
         source: sfcObj.script.content
     });
-    console.log('jsdocObj', jsdocObj);
+    fs.writeFile('./jsdocObj.json', JSON.stringify(jsdocObj));
+    // console.log('jsdocObj', jsdocObj);
 
-    // 用 eval 执行 js 部分，得到 script 对象
-    let scriptObj = eval(babel.transformSync(sfcObj.script.content).code);
-    // console.log('scriptObj', scriptObj);
+    getProps(jsObj, jsdocObj);
 
 };
-
-
 
 module.exports = {
     parseVue
 };
 
-let test = './test/test.vue';
+let test = '../test/test.vue';
 parseVue(test);
-

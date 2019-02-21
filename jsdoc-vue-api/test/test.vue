@@ -23,11 +23,21 @@ export default {
             type: Array
         },
         /**
-         * 按钮的文案
+         * 测试属性1
          */
-        text: {
+        prop1: {
             type: String,
-            default: '文案'
+            default: '测试属性1111111',
+            required: true
+        },
+        /**
+         * 需要被被忽略的属性
+         *
+         * @ignore
+         */
+        prop2: {
+            type: String,
+            default: '测试属性22222222'
         }
     },
     data() {

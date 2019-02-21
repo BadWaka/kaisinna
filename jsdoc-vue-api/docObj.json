@@ -3,13 +3,32 @@
         "options": {
             "name": "options",
             "description": "选项数组",
-            "comment": "/**\n         * 选项数组\n         *\n         * @property {string} str='aaa' 测试字符串\n         */"
+            "comment": "/**\n         * 选项数组\n         *\n         * @property {string} str='aaa' 测试字符串\n         */",
+            "properties": [{
+                "type": "string",
+                "defaultvalue": "'aaa'",
+                "description": "测试字符串",
+                "name": "str"
+            }],
+            "type": "Array"
         },
-        "text": {
-            "name": "text",
-            "description": "按钮的文案",
-            "defaultValue": "文案",
-            "comment": "/**\n         * 按钮的文案\n         */"
+        "prop1": {
+            "name": "prop1",
+            "description": "测试属性1",
+            "defaultValue": "测试属性1111111",
+            "comment": "/**\n         * 测试属性1\n         */",
+            "required": true,
+            "properties": null,
+            "type": "String"
+        },
+        "prop2": {
+            "name": "prop2",
+            "description": "需要被被忽略的属性",
+            "defaultValue": "测试属性22222222",
+            "comment": "/**\n         * 需要被被忽略的属性\n         *\n         * @ignore\n         */",
+            "properties": null,
+            "ignore": true,
+            "type": "String"
         }
     },
     "slots": {},

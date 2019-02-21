@@ -1,1 +1,1 @@
-{"props":{"options":{},"text":{"default":"文案"}},"methods":{}}
+{"props":{"options":{},"prop1":{"default":"测试属性1111111","required":true},"prop2":{"default":"测试属性22222222"}},"methods":{}}

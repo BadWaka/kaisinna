@@ -12,6 +12,7 @@ const getDocObj = (jsObj, jsdocObj) => {
 
         // props 相关
         if (commentItem.memberof && commentItem.memberof.indexOf('module.exports.props') !== -1) {
+
             // props
             if (commentItem.memberof === 'module.exports.props') {
                 let metaCodeValue = JSON.parse(commentItem.meta.code.value);
@@ -38,6 +39,7 @@ const getDocObj = (jsObj, jsdocObj) => {
                 };
                 docObj.props[commentItem.name] = propObj;
             }
+
             // 属性的类型
             else if (/^module\.exports\.props\.(\w)*\.type$/.test(commentItem.longname)) {
                 // 得到类型
@@ -83,7 +85,21 @@ const getDocObj = (jsObj, jsdocObj) => {
 
         // events
         else if (commentItem.kind === 'event') {
-
+            // 获取子属性
+            let properties = null;
+            if (commentItem.properties) {
+                properties = commentItem.properties.map((propertie, propertieIndex) => {
+                    propertie.type = propertie.type.names.join('|');
+                    return propertie;
+                });
+            }
+            let eventObj = {
+                name: commentItem.name,
+                description: commentItem.description,
+                properties,
+                comment: commentItem.comment
+            };
+            docObj.events[commentItem.name] = eventObj;
         }
     });
 

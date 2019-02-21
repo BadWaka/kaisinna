@@ -32,7 +32,28 @@
         }
     },
     "slots": {},
-    "events": {},
+    "events": {
+        "click": {
+            "name": "click",
+            "description": "点击事件",
+            "properties": [{
+                "type": "Event",
+                "description": "事件对象",
+                "name": "e"
+            }],
+            "comment": "/**\n             * 点击事件\n             *\n             * @event click\n             * @property {Event} e 事件对象\n             */"
+        },
+        "touchstart": {
+            "name": "touchstart",
+            "description": "触摸开始事件",
+            "properties": [{
+                "type": "Event",
+                "description": "事件对象",
+                "name": "e"
+            }],
+            "comment": "/**\n             * 触摸开始事件\n             *\n             * @event touchstart\n             * @property {Event} e 事件对象\n             */"
+        }
+    },
     "methods": {
         "func1": {
             "name": "func1",

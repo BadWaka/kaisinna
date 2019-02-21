@@ -19,7 +19,7 @@
             "comment": "/**\n         * 测试属性1\n         */",
             "required": true,
             "properties": null,
-            "type": "String"
+            "type": "string"
         },
         "prop2": {
             "name": "prop2",
@@ -28,7 +28,7 @@
             "comment": "/**\n         * 需要被被忽略的属性\n         *\n         * @ignore\n         */",
             "properties": null,
             "ignore": true,
-            "type": "String"
+            "type": "string"
         }
     },
     "slots": {},
@@ -38,61 +38,41 @@
             "name": "func1",
             "description": "测试方法1",
             "params": [{
-                "type": {
-                    "names": ["string"]
-                },
+                "type": "string",
                 "description": "参数a",
                 "name": "a"
             }, {
-                "type": {
-                    "names": ["number"]
-                },
+                "type": "number",
                 "description": "参数b",
                 "name": "b"
             }, {
-                "type": {
-                    "names": ["boolean"]
-                },
+                "type": "boolean",
                 "description": "参数c",
                 "name": "c"
             }],
             "returns": [{
-                "type": {
-                    "names": ["number"]
-                },
+                "type": "number",
                 "description": "res 结果"
             }],
             "comment": "/**\n         * 测试方法1\n         *\n         * @param {string} a 参数a\n         * @param {number} b 参数b\n         * @param {boolean} c 参数c\n         * @return {number} res 结果\n         */"
         },
         "func2": {
             "name": "func2",
-            "description": "测试方法1",
+            "description": "测试方法2",
             "params": [{
-                "type": {
-                    "names": ["string"]
-                },
+                "type": "string",
                 "description": "参数d",
                 "name": "d"
             }, {
-                "type": {
-                    "names": ["number"]
-                },
+                "type": "number",
                 "description": "参数e",
                 "name": "e"
             }, {
-                "type": {
-                    "names": ["boolean"]
-                },
+                "type": "boolean",
                 "description": "参数f",
                 "name": "f"
             }],
-            "returns": [{
-                "type": {
-                    "names": ["string"]
-                },
-                "description": "res 结果"
-            }],
-            "comment": "/**\n         * 测试方法1\n         *\n         * @param {string} d 参数d\n         * @param {number} e 参数e\n         * @param {boolean} f 参数f\n         * @return {string} res 结果\n         */"
+            "comment": "/**\n         * 测试方法2\n         *\n         * @param {string} d 参数d\n         * @param {number} e 参数e\n         * @param {boolean} f 参数f\n         */"
         }
     }
 }

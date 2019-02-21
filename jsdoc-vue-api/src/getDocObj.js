@@ -9,8 +9,6 @@ const getDocObj = (jsObj, jsdocObj) => {
     };
 
     jsdocObj.forEach((commentItem, commentIndex) => {
-        // console.log('commentItem', commentItem);
-        // console.log('commentItem.memberof', commentItem.memberof);
 
         // props 相关
         if (commentItem.memberof && commentItem.memberof.indexOf('module.exports.props') !== -1) {
@@ -42,20 +40,41 @@ const getDocObj = (jsObj, jsdocObj) => {
             }
             // 属性的类型
             else if (/^module\.exports\.props\.(\w)*\.type$/.test(commentItem.longname)) {
-                console.log('属性的类型', commentItem.longname);
+                // 得到类型
                 let type = commentItem.meta.code.value;
+                let baseTypeArr = ['String', 'Number', 'Boolean'];
+                if (baseTypeArr.indexOf(type) !== -1) {
+                    type = type.toLowerCase();
+                }
+                // 得到属性名
                 let propName = commentItem.longname.replace('module.exports.props.', '').replace('.type', '');
-                console.log('propName', propName);
+                // 把类型赋值给属性
                 docObj.props[propName].type = type;
             }
         }
 
         // methods；注释必须存在，没有注释则认为是私有方法，不暴露
         else if (commentItem.memberof === 'module.exports.methods' && commentItem.comment) {
+            // 获得参数
+            let params = null;
+            if (commentItem.params) {
+                params = commentItem.params.map((param, paramIndex) => {
+                    param.type = param.type.names.join('|');
+                    return param;
+                });
+            }
+            // 获得返回值
+            let returns = null;
+            if (commentItem.returns) {
+                returns = commentItem.returns.map((returnItem, returnIndex) => {
+                    returnItem.type = returnItem.type.names.join('|');
+                    return returnItem;
+                });
+            }
             let methodObj = {
                 name: commentItem.name,
                 description: commentItem.description,
-                params: commentItem.params,
+                params,
                 returns: commentItem.returns,
                 comment: commentItem.comment
             };

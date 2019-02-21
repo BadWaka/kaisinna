@@ -60,15 +60,13 @@ export default {
         },
 
         /**
-         * 测试方法1
+         * 测试方法2
          *
          * @param {string} d 参数d
          * @param {number} e 参数e
          * @param {boolean} f 参数f
-         * @return {string} res 结果
          */
         func2(d, e, f) {
-            return 'demacia';
         },
 
         onClick(e) {

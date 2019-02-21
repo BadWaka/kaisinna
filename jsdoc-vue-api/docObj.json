@@ -1,5 +1,17 @@
 {
-    "props": {},
+    "props": {
+        "options": {
+            "name": "options",
+            "description": "选项数组",
+            "comment": "/**\n         * 选项数组\n         *\n         * @property {string} str='aaa' 测试字符串\n         */"
+        },
+        "text": {
+            "name": "text",
+            "description": "按钮的文案",
+            "defaultValue": "文案",
+            "comment": "/**\n         * 按钮的文案\n         */"
+        }
+    },
     "slots": {},
     "events": {},
     "methods": {

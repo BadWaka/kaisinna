@@ -1,5 +1,6 @@
 <template>
     <div
+        ref="index"
     >
         Index
 
@@ -8,15 +9,14 @@
 </template>
 
 <script>
-import test from '../assets/test.txt';
-
 export default {
     data() {
         return {
         }
     },
     mounted() {
-        console.log('test', test);
+        let ref = this.$refs.index;
+        console.log('ref', ref, 'refs', this.$refs);
     },
     methods: {
     }

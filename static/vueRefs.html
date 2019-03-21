@@ -1,0 +1,34 @@
+<html>
+
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>
+        vue refs
+    </title>
+    <link rel="stylesheet" href="./css/reset.css">
+</head>
+
+<body>
+    <div
+        id="app"
+        style="width:100px;height:100px"
+    >
+        <div ref="div1">test div1</div>
+        <div ref="div1">test div1.1</div>
+        <div ref="div2">test div2</div>
+        <div ref="div3">test div3</div>
+        vue refs
+    </div>
+    <script src="./js/vue.js"></script>
+    <script>
+        window.onload = function() {
+            var vm = new Vue({
+                el: '#app'
+            });
+            console.log('vm', vm);
+        };
+    </script>
+</body>
+
+</html>

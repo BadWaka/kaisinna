@@ -23,6 +23,7 @@
   "homepage": "https://github.com/BadWaka/kaisinna#readme",
   "dependencies": {
     "@babel/polyfill": "^7.2.5",
+    "@baidu/pmd": "^1.0.1",
     "express": "^4.16.4",
     "lodash": "^4.17.11",
     "lottie-web": "^5.4.3",

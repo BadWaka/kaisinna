@@ -23,6 +23,7 @@
   "homepage": "https://github.com/BadWaka/kaisinna#readme",
   "dependencies": {
     "@babel/polyfill": "^7.2.5",
+    "@baidu/mars-ui": "^0.1.2",
     "@baidu/pmd": "^1.0.1",
     "ellipsis-plus": "^1.0.1",
     "express": "^4.16.4",
